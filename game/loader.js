@@ -5,16 +5,17 @@ Crafty.scene("Loading", function() {
 	Crafty.e('2D, DOM, Text')
 		.text("Loading.....")
 		.attr({ x: 200, y: 200, w: 50, h: 50 });
-			
-	
-	Crafty.load(['spriteCave/spr_sheet1.png'], function(){                     //<--------
-																		  //         |
-    Crafty.sprite(32, 'spriteCave/spr_sheet1.png', {                           //<----------->This addresses have to be further edited by PHP SCRIPT
-      spr_player:  [0, 0]
-    });
+
+	Crafty.load(['res/spritesheet.png'], function(){
+        
+        Crafty.sprite(32, 'res/spritesheet.png', {
+            playerUp:   [0,  0],
+            playerDown: [0, 32],
+            playerLeft: [0, 64],
+            playerRight:[0, 96]
+        });
  
-	Crafty.scene("map1");
+        Crafty.scene("map1");
 	})
 
-	});
-	
+});
