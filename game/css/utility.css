@@ -15,12 +15,14 @@
 	width:500px;
 	overflow:scroll;
 	overflow-x:hidden;
+    margin: auto;
 }
 
 #clearMSGBox {
-  color:blue;
-  margin-left: 680px;
-  cursor: pointer;
+    color: blue;
+    margin-left: 680px;
+    cursor: pointer;
+    margin: auto;
 }
 
 #DivWithScroll{
@@ -39,3 +41,8 @@
 	overflow:scroll;
 	overflow-x:hidden;
 }
+
+#credits {
+    text-align: center;
+    font-family: Arial;
+    margin: auto;
